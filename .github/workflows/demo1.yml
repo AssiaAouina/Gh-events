@@ -1,5 +1,5 @@
 name: Event Demo1
-on: 
+on: [push,workflow_dispatch]
 jobs:
   deploy:
     runs-on: Output event data
