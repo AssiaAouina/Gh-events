@@ -14,7 +14,7 @@ on:
       - 'dev-*' # dev-new dev-this-is-new
       - 'feat/**' # feat/ne feat /
       paths-ignore:
-        -'.github/workflows/*'
+        - '.github/workflows/*'
 jobs:
   deploy:
     runs-on: Output event data
