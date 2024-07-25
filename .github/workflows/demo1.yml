@@ -3,7 +3,17 @@ on:
   pull_request:
     types:
     - opened
+    branches:
+      - main
+      - 'dev-*' # dev-new dev-this-is-new
+      - 'feat/**' # feat/ne feat /
   workflow_dispatch:
+  push:
+      branches:
+      - 'dev-*' # dev-new dev-this-is-new
+      - 'feat/**' # feat/ne feat /
+      paths-ignore:
+        - '.github/workflows/*'
 jobs:
   deploy:
     runs-on: Output event data
