@@ -3,14 +3,12 @@ on:
   pull_request:
     types:
     - opened
-  workflow_dispatch:
-  push:
     branches:
       - main
       - 'dev-*' # dev-new dev-this-is-new
       - 'feat/**' # feat/ne feat /
-   workflow_dispatch:
-   push:
+  workflow_dispatch:
+  push:
       branches:
       - main
       - 'dev-*' # dev-new dev-this-is-new
